@@ -16,5 +16,11 @@
 */
 
 const Route = use('Route')
+const fetch = require('node-fetch');
 
-Route.on('/').render('welcome')
+// Route.on('/').render('welcome')
+
+
+Route.post('/users', 'UserController.store');
+Route.get('/users', 'UserController.store');
+Route.post('/login', 'UserController.store');
